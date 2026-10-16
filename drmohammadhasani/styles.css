@@ -177,4 +177,16 @@ h1 { color: var(--ink); }
 @media screen and (max-width: 800px) { .header nav.open { gap: 8px; } }
 @media screen and (max-width: 700px) { .contact-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; padding-block: 44px; } .contact-intro { max-width: none; } }
 @media screen and (max-width: 560px) { .contact-panel { padding: 22px; } .contact-panel .button { width: 100%; font-size: 14px; } .contact-panel h3 { font-size: 19px; } }
+/* Clear link emphasis requested in the family review */
+.emphasized-link { background: #e1ebda; color: #153f35; border: 1px solid #b7cdb0; border-radius: 6px; padding: 9px 13px; font-weight: 700; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; flex-wrap: wrap; gap: 5px 9px; line-height: 2; }
+.emphasized-link:hover { background: #d2e2c8; color: #12362d; }
+.click-hint { font-size: .85em; font-weight: 600; white-space: nowrap; }
+.media-link { background: #e1ebda; color: #153f35; border: 1px solid #b7cdb0; border-radius: 5px; padding: 8px 10px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; flex-wrap: wrap; gap: 5px 9px; }
+.media-card:hover .media-link { background: #d2e2c8; }
+.credential-list h4 .emphasized-link { display: inline-flex; }
+#stem-cell-research { scroll-margin-top: 120px; }
+@media screen and (max-width: 700px) { .section-top .emphasized-link { align-self: stretch; justify-content: center; text-align: center; } .emphasized-link { min-height: 44px; } }
+.office-profile-link { display: inline-flex; font-size: inherit; padding: 4px 12px; }
+.office-booking-link { margin-top: 22px; flex-wrap: wrap; gap: 5px 9px; text-align: center; }
+.study-source-link { text-decoration: underline; text-underline-offset: 6px; text-decoration-color: #809e82; }
 @media print{.header,.actions,.focus-strip,.closing,.footer,.media-section{display:none}body{background:white}.container{width:100%}.hero{padding:20px 0}.portrait-frame{max-width:260px}.portrait-frame img{height:270px}.section{padding-block:25px}.career-section{background:white}.career-card{break-inside:avoid}.button{display:none}a{color:inherit}.source-note a:after{content:' (' attr(href) ')';direction:ltr}}
